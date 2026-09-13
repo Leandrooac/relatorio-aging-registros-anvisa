@@ -2,7 +2,7 @@
 
 ## Contexto
 
-A pedido do gerente da área de Controladoria (atuando como Cientista de Dados), desenvolvi — ainda na função de Assistente de Qualidade e Assuntos Regulatórios — um relatório de acompanhamento de vencimento de registros de produtos junto à ANVISA, cobrindo um total de **373 registros**.
+A pedido do gerente da área de Controladoria (atuando como Cientista de Dados), desenvolvi, ainda na função de Assistente de Qualidade e Assuntos Regulatórios, um relatório de acompanhamento de vencimento de registros de produtos junto à ANVISA, cobrindo um total de **373 registros**.
 
 A demanda partiu de uma área de dados da própria empresa, que buscava aplicar uma lógica de classificação de risco já validada (a mesma metodologia usada no controle de itens próximos ao vencimento) a um problema diferente: acompanhamento de validade regulatória, não de produto físico em estoque.
 
@@ -27,7 +27,7 @@ A demanda partiu de uma área de dados da própria empresa, que buscava aplicar 
 
 ## Resultado
 
-Relatório entregue à área de Controladoria, dando visibilidade sobre a situação de vencimento de registro em um portfólio de 373 itens — informação que antes não existia de forma consolidada e classificada por risco.
+Relatório entregue à área de Controladoria, dando visibilidade sobre a situação de vencimento de registro em um portfólio de 373 itens, informação que antes não existia de forma consolidada e classificada por risco.
 
 ## Sobre os dados neste repositório
 
