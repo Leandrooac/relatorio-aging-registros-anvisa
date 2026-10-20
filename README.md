@@ -2,9 +2,9 @@
 
 ## Contexto
 
-A pedido do gerente da área de Controladoria (atuando como Cientista de Dados), desenvolvi, ainda na função de Assistente de Qualidade e Assuntos Regulatórios, um relatório de acompanhamento de vencimento de registros de produtos junto à ANVISA, cobrindo um total de **373 registros**.
+Ainda como Auxiliar de Controle de Qualidade, desenvolvi, a pedido da área de Controladoria, um relatório de acompanhamento de vencimento dos registros de produtos junto à ANVISA, cobrindo **373 registros**.
 
-A demanda partiu de uma área de dados da própria empresa, que buscava aplicar uma lógica de classificação de risco já validada (a mesma metodologia usada no controle de itens próximos ao vencimento) a um problema diferente: acompanhamento de validade regulatória, não de produto físico em estoque.
+A ideia era aplicar a mesma lógica de classificação de risco do [controle de itens próximos ao vencimento](https://github.com/Leandrooac/controle-aging-vencimento) a outro problema: a validade regulatória do registro, e não a do produto físico em estoque.
 
 ## Abordagem
 
@@ -13,12 +13,12 @@ A demanda partiu de uma área de dados da própria empresa, que buscava aplicar 
 
 | De (dias) | Até (dias) | Classificação |
 |---|---|---|
-| — | — | 00 - Registro Isento / Vigente |
-| 0 | 180 | 01 - Registro vencido / a vencer em 0–180 dias (verificar situação) |
+| — | — | 00 - Registro isento / vigente |
+| 0 | 180 | 01 - Registro vencido ou a vencer em até 180 dias (verificar situação) |
 | 181 | 365 | 02 - Registro a vencer (verificar situação) |
-| 366 | 10.000.000 | 03 - Registro a vencer (realizar acompanhamento) |
+| Acima de 365 | — | 03 - Registro a vencer (realizar acompanhamento) |
 
-3. **Entrega**: relatório consolidado disponibilizado à Controladoria para acompanhamento da situação regulatória do portfólio.
+3. **Entrega**: relatório consolidado disponibilizado à Controladoria para acompanhar a situação regulatória do portfólio.
 
 ## Ferramentas
 
@@ -27,8 +27,8 @@ A demanda partiu de uma área de dados da própria empresa, que buscava aplicar 
 
 ## Resultado
 
-Relatório entregue à área de Controladoria, dando visibilidade sobre a situação de vencimento de registro em um portfólio de 373 itens, informação que antes não existia de forma consolidada e classificada por risco.
+A Controladoria passou a ter visibilidade da situação de vencimento de 373 registros, informação que antes não existia de forma consolidada nem classificada por risco.
 
 ## Sobre os dados neste repositório
 
-Nenhum número de registro ANVISA real, nome de produto ou dado da empresa está incluído. Este repositório documenta a metodologia aplicada, não uma cópia do relatório original.
+Nenhum número de registro ANVISA, nome de produto ou dado da empresa está incluído. Este repositório documenta a metodologia aplicada, não uma cópia do relatório original.
